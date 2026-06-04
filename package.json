@@ -1,0 +1,23 @@
+{
+  "name": "meow-invoices",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "meow-invoices": "dist/meow-invoices.js"
+  },
+  "scripts": {
+    "list": "tsx src/meow-invoices.ts list",
+    "download": "tsx src/meow-invoices.ts download",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
